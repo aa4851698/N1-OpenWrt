@@ -11,13 +11,9 @@ function git_sparse_clone() {
 
 # Add packages
 #添加科学上网源
-git clone --depth=1 git clone https://github.com/kenzok8/small-package package/small-package
+git clone --depth=1  https://github.com/kenzok8/small-package package/small-package
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
-git clone -b v5-lua --single-branch --depth 1 https://github.com/sbwml/luci-app-mosdns package/mosdns
-#添加自定义的软件包源
-#git_sparse_clone main https://github.com/kiddin9/kwrt-packages ddns-go
-#git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go
-# Remove packages
+git clone --depth=1 https://github.com/linkease/istore ackage/istore
 #删除lean库中的插件，使用自定义源中的包。
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
