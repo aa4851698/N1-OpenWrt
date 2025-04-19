@@ -13,7 +13,7 @@ function git_sparse_clone() {
 #添加科学上网源
 git clone --depth=1  https://github.com/kenzok8/small-package package/small-package
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
-git clone --depth=1 https://github.com/linkease/istore ackage/istore
+git clone --depth=1 https://github.com/linkease/istore package/istore
 #删除lean库中的插件，使用自定义源中的包。
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
