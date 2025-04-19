@@ -11,6 +11,8 @@ function git_sparse_clone() {
 
 # Add packages
 #添加科学上网源
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone --depth=1  https://github.com/kenzok8/small-package package/small-package
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
 git clone --depth=1 https://github.com/linkease/istore package/istore
